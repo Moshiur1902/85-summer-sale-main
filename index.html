@@ -19,10 +19,10 @@
 
 
         <!-- banner section -->
-        <section id="banner-container"  class="grid grid-flow-col gap-16 justify-center item-center">
-            <div class="mx-4 py-16 my-16 pt-24">
+        <section id="banner-container sm:mx-auto "  class="lg:grid grid-flow-col gap-16 justify-center item-center">
+            <div class="lg:mx-4 lg:py-16 lg:my-16 pt-24">
                 <h3 class="text-center text-3xl font-medium" >---SALE FEVER---</h3>
-                <h1 class="text-6xl font-bold text-center ">Purchase TK 200 or <br> above & get <span class="text-pink-600">20% off</span></h1>
+                <h1 class="text-6xl font-bold text-center sm:px-52 ">Purchase TK 200 or <br> above & get <span class="text-pink-600">20% off</span></h1>
                 <div class="flex my-16 justify-center item-center">
                     <h3 class="text-2xl text-center" >Use Promo Code</h3> 
                     <button id="promo-button" class="bg-pink-500 px-6 mx-6 text-white rounded py-2 hover: bg-pink-600 hover:text-black hover:font-bold " >SELL200</button>
@@ -32,7 +32,7 @@
             <!-- image part -->
 
             <div>
-                <img src="images/Summer 1.png" alt="">
+                <img class="sm:w-9/12" src="images/Summer 1.png" alt="">
             </div>
         </section>
 
@@ -40,9 +40,9 @@
     <main>
         <!-- banner with card section -->
         <h1 class="mt-24  ml-52 text-3xl font-medium">Kitchenware</h1>
-    <section class="flex gap-16">
+    <section class="lg:flex lg:gap-16">
 <div>
-        <div class="grid grid-flow-col  ml-52 my-8 gap-16">
+        <div class="lg:grid grid-flow-col  ml-52 my-8 gap-16">
             <div id="btn-k.accessories">
                 <div  class="card w-64 bg-white ">
                 <figure class="px-4 pt-8 bg-base-100 mx-2 my-6 py-4 w-52 ml-6">
@@ -256,7 +256,7 @@
 
 
 
-            <div class="  mr-24 my-16">
+            <div class="sm:ml-24 lg:mr-24 lg:my-16">
                 
                     <div class="card w-96 bg-white shadow-xl">
                     
@@ -275,19 +275,19 @@
 
                   <!-- calculation sale part2 -->
                 
-                  <div class="card w-96 bg-white shadow-xl my-16 py-16">
+                  <div class="card w-96 bg-white shadow-xl my-16 py-16 ">
                     
                     <div class="card-body  ">
                       <div class="text-xl font-medium">
                         <p id="add-order"></p>
                       </div>
                       <hr>
-                      <div class="text-lg font-medium">
+                      <div onclick="clickButton(this)" class="text-lg font-medium">
                         <h1>Total price: <span id="total-item-price">0.00</span> tk </h1>
 
-                        <h2 id="discount-price">Discount :<span >0.00</span> TK</h2>
+                        <h2 >Discount :<span id="discount-price" >0.00</span> TK</h2>
 
-                        <h3>Total    : <span >0.00 </span> TK</h3>
+                        <h3>Total    : <span id="grand-total" >0.00 </span> TK</h3>
                         
                       </div>
                     
